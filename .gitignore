@@ -1,0 +1,6 @@
+# Node
+node_modules
+
+# GitHub
+build
+keytar-*

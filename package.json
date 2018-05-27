@@ -1,0 +1,26 @@
+{
+  "name": "keytar-vscode-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasHubelbauer/keytar-vscode-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomasHubelbauer/keytar-vscode-extension/issues"
+  },
+  "homepage": "https://github.com/TomasHubelbauer/keytar-vscode-extension#readme",
+  "dependencies": {
+    "fs-extra": "^6.0.1",
+    "node-fetch": "^2.1.2",
+    "tar": "^4.4.4"
+  }
+}
