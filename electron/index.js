@@ -1,16 +1,12 @@
 const { app, BrowserWindow } = require('electron');
-app.on('ready', () => {
-  const win = new BrowserWindow({ width: 800, height: 600 });
-  win.loadFile('index.html');
-
-});
-
 const path = require('path');
 const fetch = require('node-fetch');
 const fs = require('fs-extra');
 const tar = require('tar');
 
-void async function () {
+app.on('ready', async () => {
+  const win = new BrowserWindow({ width: 800, height: 600 });
+  win.loadFile('index.html');
   const version = '4.2.1';
   const name = `keytar-v${version}-electron-v${process.versions.modules}-${process.platform}-${process.arch}`;
   const tarGzFilePath = path.join(__dirname, name + '.tar.gz');
@@ -43,4 +39,4 @@ void async function () {
   await keytar.setPassword('test', 'test', 'test');
   console.log('Set');
   console.log(await keytar.findPassword('test'));
-}()
+});
