@@ -38,3 +38,16 @@ Code's bundled Keytar which might be an acceptable workaround / fallback mechani
 This is prototyped in `code` - instead of scaffolding and committing the
 extensions, I do that on the fly using Yeoman so that it's code doesn't go out
 of date or interfere with understanding of the core of the workaround.
+
+```js
+async function activate() {
+	const keytar = require('keytar');
+	await keytar.setPassword('TEST', 'Tom', 'PASSW0RD');
+	const password = await keytar.getPassword('TEST', 'Tom');
+}
+```
+
+## To-Do
+
+Finalize patching the generated extension's `package.json` to have a `*` for an
+activation event and for its `activate` to be the above.
