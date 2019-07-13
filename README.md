@@ -1,6 +1,6 @@
 # Keytar VS Code Extensions
 
-`npm install` & `npm start`
+`npm install` & `npm start` here or in `electron`.
 
 This repository demonstrates a weird Keytar issue where when loaded dynamically
 using `require` from a `node` file, the library seemingly works (doesn't work,
@@ -34,3 +34,7 @@ for this problem linking to this repro.
 
 In https://github.com/microsoft/vscode/issues/68738 it is shown how to use VS
 Code's bundled Keytar which might be an acceptable workaround / fallback mechanism.
+
+This is prototyped in `code` - instead of scaffolding and committing the
+extensions, I do that on the fly using Yeoman so that it's code doesn't go out
+of date or interfere with understanding of the core of the workaround.
