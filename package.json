@@ -20,7 +20,7 @@
   "homepage": "https://github.com/TomasHubelbauer/keytar-vscode-extension#readme",
   "dependencies": {
     "fs-extra": "^6.0.1",
-    "node-fetch": "^2.1.2",
-    "tar": "^4.4.4"
+    "node-fetch": "^2.6.0",
+    "tar": "^4.4.10"
   }
 }
