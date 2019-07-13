@@ -35,9 +35,9 @@ void async function () {
 
   const keytar = require(nodeFilePath);
   console.log('Loaded the module');
-  await keytar.setPassword('test', 'test', 'test');
+  await keytar.setPassword('TEST', 'Tom', 'PASSW0RD');
   console.log('Set the password');
-  console.log(await keytar.findPassword('test'));
+  console.log(await keytar.getPassword('TEST', 'Tom'));
   console.log('Found the password');
 
   // How come this prevents the crash when there is no more code after and async
