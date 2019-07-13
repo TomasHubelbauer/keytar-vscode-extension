@@ -14,6 +14,8 @@ a junk exception:
 # errno 3221225477
 ```
 
+(In the `electron` repro the file name and line number is okay.)
+
 The `require` seems to go through and resolves to the correct instance whose
 methods `setPassword` and `findPassword` both work as well, but then it crashes.
 
