@@ -33,7 +33,6 @@ void async function () {
   await tar.x({ f: tarFilePath, cwd: __dirname }, ['build/Release/keytar.node']);
   console.log('Extracted the asset .tar');
 
-  // Module did not self-register? How come, everything matches!
   const keytar = require(nodeFilePath);
   console.log('Loaded the module');
   await keytar.setPassword('test', 'test', 'test');
