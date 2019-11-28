@@ -49,5 +49,6 @@ async function activate() {
 
 ## To-Do
 
-Finalize patching the generated extension's `package.json` to have a `*` for an
-activation event and for its `activate` to be the above.
+### Finalize patching the generated extension's `package.json`
+
+To have a `*` for an activation event and for its `activate` to be the above.
